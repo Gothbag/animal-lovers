@@ -12,7 +12,7 @@ export default function FanEntry({ name, users }) {
       <Fragment key={user.id}>
         <div className="tooltip">
           {user.fullName}
-          <span className="tooltiptext">Points: {user.points}</span>
+          <span className="tooltip-text">Points: {user.points}</span>
         </div>
         {index < numberShown - 1 ? ", " : ""}
       </Fragment>

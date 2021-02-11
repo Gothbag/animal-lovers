@@ -2,6 +2,7 @@
   border: 2px solid black;
   margin-bottom: 6px;
   padding: 6px;
+  border-radius: 3px;
 }
 
 .animal-header {
@@ -21,13 +22,13 @@
   border-bottom: 1px dotted black;
 }
 
-.tooltip .tooltiptext {
+.tooltip .tooltip-text {
   visibility: hidden;
   width: 102px;
   background-color: black;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 3px;
   padding: 6px;
   opacity: 0.75;
   font-size: 18px;
@@ -37,6 +38,6 @@
   z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltip-text {
   visibility: visible;
 }

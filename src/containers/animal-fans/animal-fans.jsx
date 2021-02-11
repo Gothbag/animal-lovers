@@ -15,7 +15,7 @@ export default function AnimalFans() {
     if (animals.length === 0) {
       dispatch(loadUsers());
     }
-  });
+  }, []);
 
   return (
     <div className="animal-fans-container">

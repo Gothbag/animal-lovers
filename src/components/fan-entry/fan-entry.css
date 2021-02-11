@@ -1,0 +1,42 @@
+.fan-entry {
+  border: 2px solid black;
+  margin-bottom: 6px;
+  padding: 6px;
+}
+
+.animal-header {
+  text-transform: uppercase;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 21px;
+}
+
+.tooltip {
+  cursor: help;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 102px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px;
+  opacity: 0.75;
+  font-size: 18px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

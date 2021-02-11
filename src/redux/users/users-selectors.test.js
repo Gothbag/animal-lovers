@@ -34,72 +34,22 @@ describe("users selectors", () => {
 
   describe("animalsSelector", () => {
     it("should get all animal objects", () => {
-      expect(animalsSelector(state)).toEqual([
-        {
-          name: "tiger",
-          users: ["Liliana Britt", "Jeanie Melendez"]
-        },
-        {
-          name: "panda",
-          users: ["Liliana Britt", "Jeanie Melendez"]
-        },
-        {
-          name: "jaguar",
-          users: ["Liliana Britt", "Lidia Newton"]
-        },
-        {
-          name: "zebra",
-          users: ["Liliana Britt", "Jeanie Melendez"]
-        },
-        {
-          name: "horse",
-          users: ["Liliana Britt", "Jeanie Melendez", "Lidia Newton"]
-        },
-        {
-          name: "gorilla",
-          users: ["Liliana Britt"]
-        },
-        {
-          name: "lion",
-          users: ["Liliana Britt", "Jeanie Melendez", "Lidia Newton"]
-        },
-        {
-          name: "bear",
-          users: ["Liliana Britt", "Jeanie Melendez"]
-        },
-        {
-          name: "elephant",
-          users: ["Liliana Britt"]
-        },
-        {
-          name: "penguin",
-          users: ["Liliana Britt", "Jeanie Melendez"]
-        },
-        {
-          name: "cat",
-          users: ["Liliana Britt"]
-        },
-        {
-          name: "kangaroo",
-          users: ["Liliana Britt", "Jeanie Melendez"]
-        },
-        {
-          name: "koala",
-          users: ["Liliana Britt", "Jeanie Melendez"]
-        },
-        {
-          name: "monkey",
-          users: ["Liliana Britt", "Jeanie Melendez"]
-        },
-        {
-          name: "dog",
-          users: ["Liliana Britt", "Jeanie Melendez", "Lidia Newton"]
-        },
-        {
-          name: "rat",
-          users: ["Lidia Newton"]
-        }
-      ]);
+      expect(animalsSelector(state).length).toEqual(16);
+      expect(animalsSelector(state)[0]).toEqual({
+        name: "tiger",
+        users: [
+          {
+            fullName: "Liliana Britt",
+            id: "5fbfe211f360cb3058158a7c",
+            points: 93
+          },
+          {
+            fullName: "Jeanie Melendez",
+            id: "5fbfe2112f528372cc224027",
+            points: 65
+          }
+        ]
+      });
     });
   });
 });
